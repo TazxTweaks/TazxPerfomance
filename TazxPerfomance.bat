@@ -1,9 +1,9 @@
 @echo off
 Title Tazx Performance Created by Tazweaks
 echo Creando el tazxlogs.txt
-echo Tazx Performance Created by Tazweaks>Tazweaks_logs.txt
+echo Tazx Performance Created by Tazweaks>Tazweaks_logs.t
 :: Enable ANSI Escape Sequences
-reg add "HKCU\CONSOLE" /v "VirtualTerminalLevel" /t REG_DWORD /d "1" /f >>Tazweaks_logs.txt 
+reg add "HKCU\CONSOLE" /v "VirtualTerminalLevel" /t REG_DWORD /d "1" /f >>Tazweaks_logs.t 
 :: Version #
 Set Version=1.0
 :: Main Menu
@@ -48,7 +48,7 @@ if '%choice%'=='6' goto Apps
 if '%choice%'=='7' goto Internet
 if '%choice%'=='8' goto CPU
 if '%choice%'=='9' goto Plan
-if '%choice%'=='10' goto ME
+if '%choice%'=='10'goto ME
 :RestorePoint
 cls
 
