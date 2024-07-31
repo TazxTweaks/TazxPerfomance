@@ -34,7 +34,7 @@ echo                      [5] Desactivar Mitigaciones.                          
 echo.
 echo                      [7] internet(*TEST*).                                 [9] Plan de Energia+Limpieza de la PC.               
 echo.
-echo                      [8]CPU Tweaks
+echo                      [8]CPU Tweaks                                         [10]Contacto por si hay algun problema.
 
 set choice=
 set /p choice=
@@ -48,6 +48,7 @@ if '%choice%'=='6' goto Apps
 if '%choice%'=='7' goto Internet
 if '%choice%'=='8' goto CPU
 if '%choice%'=='9' goto Plan
+if '%choice%'=='10' goto ME
 :RestorePoint
 cls
 
@@ -932,6 +933,16 @@ set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto AMDCPU
 if '%choice%'=='2' goto IntelCPU
+
+:ME
+cls
+echo Mandame un DM con tu problema.
+Start https://x.com/TazxTweaks
+echo                   [1]Menu
+set choice=
+set /p choice=
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'=='1' goto Menu
 
 
 :Servicios
