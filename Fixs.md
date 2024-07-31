@@ -15,9 +15,13 @@ Por favor, copie el enlace proporcionado anteriormente y péguelo en la barra de
 
 
 Importar el plan de energía con el siguiente comando:
+
 powercfg -import "UBICACIÓN DEL PLAN DE ENERGÍA/NOMBRE DEL PLAN DE ENERGÍA"
+
 Cambiar el Plan de Energía siguiendo esta guía:
+
 3.1. Presione la tecla de Windows en su teclado.
+
 3.2. Busque "Elegir un plan de energía", presione Enter y seleccione el plan de energía denominado TazxPerfomance.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
