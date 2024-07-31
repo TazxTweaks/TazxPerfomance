@@ -1,5 +1,6 @@
 SOLUCIONES
 1)
+
 Solución al Problema de Energía
 
 Si usted ha experimentado este problema:
