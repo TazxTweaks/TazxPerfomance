@@ -1103,9 +1103,9 @@ cls
 
 
 ::Aplicando el plan de energia 
-curl -g -k -L -# -o "C:\Tazx Tweaks Power Plan.pow" "https://github.com/TazxTweaks/TazxPerfomance/raw/3311686141c9ce0fffa0b20de3550211b41cc975/Recursos/Tazx%20Tweaks%20Power%20Plan.pow"
-powercfg -import "C:\Tazx Tweaks Power Plan.pow" b6f13119-97a2-45a4-9e02-8425b5fe94d1 
-powercfg -setactive b6f13119-97a2-45a4-9e02-8425b5fe94d1 
+curl -g -k -L -# -o "C:\TazxPerfomance.pow" "https://github.com/TazxTweaks/TazxPerfomance/raw/main/Power%20Plan/TazxPerfomance.pow"
+powercfg -import "C:\TazxPerfomance.pow" 3b83dea0-598d-4d89-8601-1a8bf1bd4374
+powercfg -setactive 3b83dea0-598d-4d89-8601-1a8bf1bd4374
 cls
 ::Limpiando tu pc.
 rd /s /f /q c:\windows\temp\*.*
