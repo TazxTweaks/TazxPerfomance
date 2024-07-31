@@ -72,6 +72,9 @@ cls
 
 
 echo Mandame un DM con tu problema.
+echo En este link ahi unos Fixs los cuales le podran ayudar con su problema.
+echo https://github.com/TazxTweaks/TazxPerfomance/blob/main/Fixs.md
+echo En caso contrario mandeme un DM con su problema.
 Start https://x.com/TazxTweaks
 echo                   [1]Menu
 set choice=
