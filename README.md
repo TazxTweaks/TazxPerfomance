@@ -1,7 +1,9 @@
 # TazxPerfomance
 *IMPORTANTE*
 
-![channels4_profile](https://github.com/user-attachments/assets/ceaf52ea-bd5a-4719-bc64-2d91a673a135)
+
+![images](https://github.com/user-attachments/assets/f30f394d-424c-425e-a22c-39ca6cb27b5d)
+
 
 
 **Descripción del Archivo:**
