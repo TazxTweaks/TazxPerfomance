@@ -7,7 +7,7 @@ Solución al Problema de Energía
 Si usted ha experimentado este problema:
 ![image](https://github.com/user-attachments/assets/c7263479-ad21-43bf-b212-c64a829eb57b)
 
-La solución es la siguiente:Plan de Energia
+La solución es la siguiente:
 
 Descargar el Plan de Energía: 
 https://github.com/TazxTweaks/TazxPerfomance/blob/main/Power%20Plan/TazxPerfomance.pow
