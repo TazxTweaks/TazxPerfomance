@@ -1,8 +1,6 @@
 SOLUCIONES
 
-1)
-
-Solución al Problema de Energía
+#Solución al Problema de Energía
 
 Si usted ha experimentado este problema:
 ![image](https://github.com/user-attachments/assets/c7263479-ad21-43bf-b212-c64a829eb57b)
