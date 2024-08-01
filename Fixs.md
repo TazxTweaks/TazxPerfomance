@@ -8,7 +8,7 @@ Si usted ha experimentado este problema:
 La solución es la siguiente:
 
 Descargar el Plan de Energía: 
-https://github.com/TazxTweaks/TazxPerfomance/blob/main/Power%20Plan/TazxPerfomance.pow
+https://github.com/TazxTweaks/TazxPerfomance/raw/main/Power%20Plan/TazxPerfomance.pow
 Por favor, copie el enlace proporcionado anteriormente y péguelo en la barra de direcciones de su navegador. Una vez hecho esto, la descarga del plan de energía comenzará automáticamente.
 
 
