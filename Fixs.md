@@ -12,7 +12,7 @@ https://github.com/TazxTweaks/TazxPerfomance/raw/main/Power%20Plan/TazxPerfomanc
 Por favor, copie el enlace proporcionado anteriormente y péguelo en la barra de direcciones de su navegador. Una vez hecho esto, la descarga del plan de energía comenzará automáticamente.
 
 
-Importar el plan de energía con el siguiente comando:
+Importar el plan de energía con el siguiente comando en CMD (Administrador):
 
 powercfg -import "UBICACIÓN DEL PLAN DE ENERGÍA/NOMBRE DEL PLAN DE ENERGÍA"
 
