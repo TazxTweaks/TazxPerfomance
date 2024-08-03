@@ -72,10 +72,6 @@ set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto Menu
 
-
-:Rendimiento
-cls
-
 :Me
 cls
 
@@ -91,7 +87,8 @@ set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto Menu
 
-
+:Rendimiento
+cls
 
 ::Aplicando Tweaks
 echo Credits To K3rnelPan1c
