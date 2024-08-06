@@ -1,27 +1,23 @@
-# TazxPerfomance
-*IMPORTANTE*
-
+# TazxPerformance
+*IMPORTANT*
 
 ![images](https://github.com/user-attachments/assets/f30f394d-424c-425e-a22c-39ca6cb27b5d)
 
+**File Description:**
+The .bat file named "TazxPerformance Performance" is designed to optimize Windows 10 PCs. Currently, it is not compatible with Windows 11. If you find a section marked with (*TEST*), this indicates that this section is in test mode. It is recommended to apply these sections last and create a restore point before proceeding.
 
+**Use and Distribution Rights for the "TazxPerformance" .bat File**
 
-**Descripción del Archivo:**
-El archivo .bat denominado "Rendimiento de TazxPerformance" está diseñado para optimizar PCs con Windows 10. Actualmente, no es compatible con Windows 11. En caso de encontrar una sección marcada con (*TEST*), esto indica que dicha sección está en modo de prueba. Se recomienda aplicar estas secciones al final y crear un punto de restauración antes de proceder.
+**Copyright and Use:**
 
-**Derechos de Uso y Distribución del Archivo .bat "Rendimiento de TazxPerformance"**
+1. **Intellectual Property**:
+* The "TazxPerformance" file is the intellectual property of the author. All rights related to the file are reserved to the author.
 
-**Derechos de Autor y Uso:**
+2. **Distribution and Publication**:
+* Redistribution or publication of the file, whether on websites, blogs, guides, videos or other media, is prohibited without the express consent of the author. Any use of the file in public or private content must be accompanied by proper recognition of the author.
 
-1. **Propiedad Intelectual**:
-   * El archivo "Rendimiento de TazxPerformance" es propiedad intelectual del autor. Todos los derechos relacionados con el archivo están reservados al autor.
+3. **Credits**:
+* If the "TazxPerformance" file is used to create guides, videos or other content, proper credit must be given to the original author. Unauthorized use or misappropriation of the file is illegal and goes against the principles of intellectual property and respect for the rights of the author.
 
-2. **Distribución y Publicación**:
-   * La redistribución o publicación del archivo, ya sea en sitios web, blogs, guías, videos u otros medios, está prohibida sin el consentimiento expreso del autor. Cualquier uso del archivo en contenidos públicos o privados debe ser acompañado por el reconocimiento adecuado del autor.
-
-3. **Créditos**:
-   * Si se utiliza el archivo "Rendimiento de TazxPerformance" para crear guías, videos u otros contenidos, se deben otorgar los debidos créditos al autor original. El uso no autorizado o la apropiación indebida del archivo es ilegal y va en contra de los principios de propiedad intelectual y respeto a los derechos del autor.
-
-4. **Advertencia sobre el Robo de Propiedad Intelectual**:
-   * El robo o uso no autorizado del archivo es ilegal. El archivo está destinado a la comunidad y su distribución o uso debe hacerse respetando los derechos del autor y proporcionando el crédito adecuado.
-
+4. **Warning about the Theft of Intellectual Property**:
+* Theft or unauthorized use of the file is illegal. The file is intended for the community and its distribution or use must be done respecting the rights of the author and providing proper credit.
