@@ -1,25 +1,27 @@
-SOLUCIONES
+SOLUTIONS
 
-#Solución al Problema de Energía
+#Power Problem Solution
 
-Si usted ha experimentado este problema:
+If you have experienced this problem:
 ![image](https://github.com/user-attachments/assets/c7263479-ad21-43bf-b212-c64a829eb57b)
 
-La solución es la siguiente:
+The solution is as follows:
 
-Descargar el Plan de Energía: 
+Download the Energy Plan: 
 https://github.com/TazxTweaks/TazxPerfomance/raw/main/Power%20Plan/TazxPerfomance.pow
-Por favor, copie el enlace proporcionado anteriormente y péguelo en la barra de direcciones de su navegador. Una vez hecho esto, la descarga del plan de energía comenzará automáticamente.
+Please copy the link provided above and paste it into your browser's address bar. Once this is done, the download of the energy plan will start automatically.
 
 
-Importar el plan de energía con el siguiente comando en CMD (Administrador):
+Import the power plan with the following command in CMD (Administrator):
 
-powercfg -import "UBICACIÓN DEL PLAN DE ENERGÍA/NOMBRE DEL PLAN DE ENERGÍA"
+powercfg -import "POWER PLAN LOCATION/NAME OF POWER PLAN".
 
-Cambiar el Plan de Energía siguiendo esta guía:
+Change the Power Plan following this guide:
 
-3.1. Presione la tecla de Windows en su teclado.
+3.1. Press the Windows key on your keyboard.
 
-3.2. Busque "Elegir un plan de energía", presione Enter y seleccione el plan de energía denominado TazxPerfomance.
+3.2. Search for "Choose a power plan", press Enter and select the power plan named TazxPerfomance.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Translated with DeepL.com (free version)
