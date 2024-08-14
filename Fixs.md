@@ -23,5 +23,3 @@ Change the Power Plan following this guide:
 3.2. Search for "Choose a power plan", press Enter and select the power plan named TazxPerfomance.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Translated with DeepL.com (free version)
