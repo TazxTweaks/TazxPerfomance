@@ -1,7 +1,6 @@
 # TazxPerformance
 *IMPORTANT*
 
-![images](https://github.com/user-attachments/assets/f30f394d-424c-425e-a22c-39ca6cb27b5d)
 
 **File Description:**
 The .bat file named "TazxPerformance Performance" is designed to optimize Windows 10 PCs. Currently, it is not compatible with Windows 11. If you find a section marked with (*TEST*), this indicates that this section is in test mode. It is recommended to apply these sections last and create a restore point before proceeding.
