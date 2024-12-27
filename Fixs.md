@@ -1,6 +1,6 @@
 SOLUTIONS
 
-#Power Problem Solution
+##Power Problem Solution##
 
 If you have experienced this problem:
 ![image](https://github.com/user-attachments/assets/c7263479-ad21-43bf-b212-c64a829eb57b)
