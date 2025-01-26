@@ -3,7 +3,7 @@ Title Tazx Performance Created by TazxTweaks
 echo Create tazxlogs.txt
 echo Tazx Performance Created by TazxTweaks>TazxTweaks_logs.txt
 
-:: Getting Admin Permissions https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file
+:: Getting Admin Permissions
 echo Checking for Administrative Privelages...
 timeout /t 3 /nobreak > NUL
 IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
@@ -31,7 +31,7 @@ if '%errorlevel%' NEQ '0' (
 :: Enable ANSI Escape Sequences
 reg add "HKCU\CONSOLE" /v "VirtualTerminalLevel" /t REG_DWORD /d "1" /f >>TazxTweaks_logs.txt
 :: Version #
-Set Version=2.0
+Set Version=2.1
 :: Main Menu
 :Menu
 chcp 65001 >nul 2>&1
@@ -64,9 +64,9 @@ echo                      [8] CPU Tweaks.                                       
 echo.
 echo                      [G] Optimize your graphics.                           [N] Nips(ONLY FOR NVIDIA).
 echo.
-echo                      [B] Bios                                              [P] Power Plan
+echo                      [B] Bios                                              [T] Disclamer
 echo.
-echo                      [D] Tweaks For Device Manager                                   [T] Disclamer
+echo                                              [D] Tweaks For Device Manager                                   
 
 set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
@@ -87,8 +87,6 @@ if '%choice%'=='N' goto Nips
 if '%choice%'=='n' goto Nips
 if '%choice%'=='b' goto Bios
 if '%choice%'=='B' goto Bios
-if '%choice%'=='p' goto Power
-if '%choice%'=='P' goto Power
 if '%choice%'=='D' goto DWM
 if '%choice%'=='d' goto DWM
 if '%choice%'=='T' goto disc
@@ -111,17 +109,8 @@ if '%choice%'=='1' goto Menu
 :Me
 cls
 
-
-echo Sst me a DM with your problem.
-echo In this link there are some Fixes which may help you with your problem.
-echo https://github.com/TazxTweaks/TazxPerfomance/blob/main/Fixs.md
-echo Otherwise sst me a DM with your problem.
-Start https://x.com/TazxTweaks
-echo                   [1]Menu
-set choice=
-set /p choice=
-if not '%choice%'=='' set choice=%choice:~0,1%
-if '%choice%'=='1' goto Menu
+Start https://tazxtweaks.github.io/
+goto Menu
 
 :disc
 cls
@@ -160,6 +149,7 @@ if '%choice%'=='1' goto Menu
 :Rstimiento
 
 :: Tweaks
+
 echo Credits To K3rnelPan1c
 
 Reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer" /v "AltTabSettings" /t REG_DWORD /d "1" /f 
@@ -786,17 +776,6 @@ set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto Menu
 
-:Power
-Start https://github.com/TazxTweaks/TazxPerfomance/raw/refs/heads/main/Power%20Plan/TazxPerfomance.pow
-cls
-ECHO Please follow the following steps to apply the energy plan.
-Start https://github.com/TazxTweaks/TazxPerfomance/blob/main/Fixs.md
-echo                   [1]Menu
-set choice=
-set /p choice=
-if not '%choice%'=='' set choice=%choice:~0,1%
-if '%choice%'=='1' goto Menu
-
 :graficas
 cls
 
@@ -816,65 +795,12 @@ if '%choice%'=='1' goto Nvidia
 if '%choice%'=='2' goto Radeon
 
 :Nvidia
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "D3PCLatency" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "F1TransitionLatency" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "LOWLATENCY" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "Node3DLowLatency" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PciLatencyTimerControl" /t REG_DWORD /d "20" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RMDeepL1EntryLatencyUsec" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RmGspcMaxFtuS" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RmGspcMinFtuS" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RmGspcPerioduS" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RMLpwrEiIdleThresholdUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RMLpwrGrIdleThresholdUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RMLpwrGrRgIdleThresholdUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RMLpwrMsIdleThresholdUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "VRDirectFlipDPCDelayUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "VRDirectFlipTimingMarginUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "VRDirectJITFlipMsHybridFlipDelayUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "vrrCursorMarginUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "vrrDeflickerMarginUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "vrrDeflickerMaxUs" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "PreferSystemMemoryContiguous" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RMHdcpKeyGlobZero" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "TCCSupported" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "EnableTiledDisplay" /t REG_DWORD /d "0" /f 
-reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "NvBackst" /f 
-reg add "HKLM\SOFTWARE\NVIDIA Corporation\NvControlPanel2\Client" /v "OptInOrOutPreference" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global\FTS" /v "EnableRID66610" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global\FTS" /v "EnableRID64640" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global\FTS" /v "EnableRID44231" /t REG_DWORD /d "0" /f 
-schtasks /change /disable /tn "NvTmRep_CrashReport1_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" 
-schtasks /change /disable /tn "NvTmRep_CrashReport2_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" 
-schtasks /change /disable /tn "NvTmRep_CrashReport3_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" 
-schtasks /change /disable /tn "NvTmRep_CrashReport4_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" 
-schtasks /change /disable /tn "NvDriverUpdateCheckDaily_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" 
-schtasks /change /disable /tn "NVIDIA GeForce Experience SelfUpdate_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" 
-schtasks /change /disable /tn "NvTmMon_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}" 
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\NVTweak" /v "DisplayPowerSaving" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "DisableWriteCombining" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm" /v "RmGpsPsEnablePerCpuCoreDpc" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\NVAPI" /v "RmGpsPsEnablePerCpuCoreDpc" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global\NVTweak" /v "RmGpsPsEnablePerCpuCoreDpc" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "RmGpsPsEnablePerCpuCoreDpc" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power" /v "RmGpsPsEnablePerCpuCoreDpc" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "Acceleration.Level" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "DesktopStereoShortcuts" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "FeatureControl" /t REG_DWORD /d "4" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "NVDeviceSupportKFilter" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RmCacheLoc" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RmDisableInst2Sys" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RmFbsrPagedDMA" /t REG_DWORD /d "1" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "RmProfilingAdminOnly" /t REG_DWORD /d "0" /f :: Disable DX Event Tracking
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "TrackResetEngine" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "ValidateBlitSubRects" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "TdrLevel" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "TdrDelay" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "TdrDdiDelay" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "TdrDebugMode" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "TdrLimitCount" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "TdrLimitTime" /t REG_DWORD /d "0" /f 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\GraphicsDrivers" /v "TdrTestMode" /t REG_DWORD /d "0" /f 
+:: DriverNvidia: credits to techpowerup for nvcleanstall and TroubleChute for the video.
+Start https://www.techpowerup.com/download/techpowerup-nvcleanstall/
+timeout /t 5 /nobreak
+::Tutorial
+Start https://youtu.be/B4baN3b8oOE?si=g-Bffemo4AMBbyhb
+
 cls
 color 03
 echo                   [1]Menu
@@ -996,8 +922,6 @@ if '%choice%'=='1' goto Menu
 
 :Valorant
 cls
-Title Applying Testing Nip.
-
 curl -g -k -L -# -o "%temp%\nvidiaProfileInspector.zip" "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/latest/download/nvidiaProfileInspector.zip" 
 powershell -NoProfile Expand-Archive '%temp%\nvidiaProfileInspector.zip' -DestinationPath 'C:\NvidiaProfileInspector\' 
 curl -g -k -L -# -o "C:\NvidiaProfileInspector\Valorant.nip" "https://github.com/TazxTweaks/TazxPerfomance/raw/main/Games/Valorant.nip" 
@@ -1035,129 +959,22 @@ set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'=='1' goto AMD
 if '%choice%'=='2' goto Intel
-if '%choice%'=='3' goto cputweaks
+if '%choice%'=='3' goto BCD
 :AMD
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\AmdPPM" /v Start /t REG_DWORD /d 2 /f
 :Intel
 reg add "HKLM\SYSTEM\CurrentControlSet\Services\IntelPPM" /v Start /t REG_DWORD /d 2 /f
-:cputweaks
+:BCD
+bcdedit /timeout 10
+bcdedit /set useplatformtick No
+bcdedit /set disabledynamictick Yes
+bcdedit /set bootmenupolicy Legacy
 cls
-echo [1]AMD      [2]Intel
-:AMDCPU
-bcdedit /deletevalue allowedinmemorysettings
-bcdedit /deletevalue avoidlowmemory
-bcdedit /deletevalue bootems
-bcdedit /deletevalue bootlog
-bcdedit /deletevalue bootmenupolicy
-bcdedit /deletevalue bootux
-bcdedit /deletevalue configaccesspolicy
-bcdedit /deletevalue configflags
-bcdedit /deletevalue debug
-bcdedit /deletevalue disabledynamictick
-bcdedit /deletevalue disableelamdrivers
-bcdedit /deletevalue ems
-bcdedit /deletevalue extstedinput
-bcdedit /deletevalue firstmegabytepolicy
-bcdedit /deletevalue forcefipscrypto
-bcdedit /deletevalue forcelegacyplatform
-bcdedit /deletevalue graphicsmodedisabled
-bcdedit /deletevalue halbreakpoint
-bcdedit /deletevalue highestmode
-bcdedit /deletevalue hypervisorlaunchtype
-bcdedit /deletevalue integrityservices
-bcdedit /deletevalue isolatedcontext
-bcdedit /deletevalue nointegritychecks
-bcdedit /deletevalue nolowmem
-bcdedit /deletevalue noumex
-bcdedit /deletevalue nx
-bcdedit /deletevalue onecpu
-bcdedit /deletevalue pae
-bcdedit /deletevalue perfmem
-bcdedit /deletevalue quietboot
-bcdedit /deletevalue sos
-bcdedit /deletevalue testsigning
-bcdedit /deletevalue tpmbootentropy
-bcdedit /deletevalue tscsyncpolicy
-bcdedit /deletevalue usephysicaldestination
-bcdedit /deletevalue useplatformclock
-bcdedit /deletevalue useplatformtick
-bcdedit /deletevalue vm
-bcdedit /deletevalue vsmlaunchtype
-bcdedit /set disabledynamictick yes
-bcdedit /set useplatformtick yes
-bcdedit /timeout 0
-bcdedit /set nx optout
-bcdedit /set bootux disabled
-bcdedit /set bootmenupolicy standard
-bcdedit /set hypervisorlaunchtype off
-bcdedit /set tpmbootentropy ForceDisable
-bcdedit /set quietboot yes
-bcdedit /set {globalsettings} custom:16000067 true
-bcdedit /set {globalsettings} custom:16000069 true
-bcdedit /set {globalsettings} custom:16000068 true
-bcdedit /set highestmode Yes
-bcdedit /set onecpu No
-bcdedit /set forcefipscrypto No
-goto Menu
-:IntelCPU
-bcdedit /deletevalue allowedinmemorysettings
-bcdedit /deletevalue avoidlowmemory
-bcdedit /deletevalue bootems
-bcdedit /deletevalue bootlog
-bcdedit /deletevalue bootmenupolicy
-bcdedit /deletevalue bootux
-bcdedit /deletevalue configaccesspolicy
-bcdedit /deletevalue configflags
-bcdedit /deletevalue debug
-bcdedit /deletevalue disabledynamictick
-bcdedit /deletevalue disableelamdrivers
-bcdedit /deletevalue ems
-bcdedit /deletevalue extstedinput
-bcdedit /deletevalue firstmegabytepolicy
-bcdedit /deletevalue forcefipscrypto
-bcdedit /deletevalue forcelegacyplatform
-bcdedit /deletevalue graphicsmodedisabled
-bcdedit /deletevalue halbreakpoint
-bcdedit /deletevalue highestmode
-bcdedit /deletevalue hypervisorlaunchtype
-bcdedit /deletevalue integrityservices
-bcdedit /deletevalue isolatedcontext
-bcdedit /deletevalue nointegritychecks
-bcdedit /deletevalue nolowmem
-bcdedit /deletevalue noumex
-bcdedit /deletevalue nx
-bcdedit /deletevalue onecpu
-bcdedit /deletevalue pae
-bcdedit /deletevalue perfmem
-bcdedit /deletevalue quietboot
-bcdedit /deletevalue sos
-bcdedit /deletevalue testsigning
-bcdedit /deletevalue tpmbootentropy
-bcdedit /deletevalue tscsyncpolicy
-bcdedit /deletevalue usephysicaldestination
-bcdedit /deletevalue useplatformclock
-bcdedit /deletevalue useplatformtick
-bcdedit /deletevalue vm
-bcdedit /deletevalue vsmlaunchtype
-bcdedit /set disabledynamictick yes
-bcdedit /set useplatformtick yes
-bcdedit /timeout 0
-bcdedit /set bootux disabled
-bcdedit /set bootmenupolicy standard
-bcdedit /set hypervisorlaunchtype off
-bcdedit /set quietboot yes
-bcdedit /set {globalsettings} custom:16000067 true
-bcdedit /set {globalsettings} custom:16000069 true
-bcdedit /set {globalsettings} custom:16000068 true
-bcdedit /set highestmode Yes
-bcdedit /set onecpu No
-bcdedit /set forcefipscrypto No
-goto Menu
+echo                   [1]Menu
 set choice=
 set /p choice=
 if not '%choice%'=='' set choice=%choice:~0,1%
-if '%choice%'=='1' goto AMDCPU
-if '%choice%'=='2' goto IntelCPU
+if '%choice%'=='1' goto Menu
 
 :DWM
 cls
